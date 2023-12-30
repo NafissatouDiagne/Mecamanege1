@@ -11,3 +11,152 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+/* Acceuil client **/
+
+.animeslistes{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 2, 0)),url('/public/assets/img/photos/acceuil.jpg');
+  height:270px;
+  background-position: center;
+  background-size: cover;
+ 
+font-size: larger; 
+font-family:cursive;
+color: white;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+background-image: url('/public/assets/img/photos/imagemess.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+  margin:  0;
+  background-color: #f4f4f4;
+  padding: 30px;
+  padding-top: 100px;
+  height: 100%;
+overflow-y: auto;
+}
+
+.messagediv, .messageuser1 {
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+  max-width: 70%;
+}
+
+.messagediv {
+  background: linear-gradient(#49436a, #22034d);
+  border: 2px solid #231149;
+  color: whitesmoke;
+  align-self: flex-end;
+  border-top-right-radius:0px;
+}
+
+
+.messageuser1 {
+  background: linear-gradient(#f0f0f0, #d8d8d8);
+  border: 2px solid #999;
+  color: #333;
+  align-self: flex-start;
+  border-top-left-radius:0px;
+
+}
+.time {
+  margin:5px ;
+  margin-bottom: 0;
+  margin-top: 0px;
+
+  font-size: 10px;
+  color:  rgb(141, 149, 156);
+  
+float:inline-end;
+}
+.status {
+
+  font-size: 8px;
+  color: #888;
+  margin-top: 5px;
+
+}
+.img1{
+  align-self: flex-end;
+  
+}
+.img2{
+  align-self: flex-start;
+  
+}
+.page2{
+  background-image: url('/public/assets/img/acceuil.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height:250px;
+  background-position: center;
+}
+.page2_1{
+  margin-bottom:-50px;
+}
+/* Ajoutez des règles CSS pour la version responsive si nécessaire */
+@media (max-width: 768px) {
+  .messagediv, .messageuser1 {
+      max-width: 80%;
+      padding:1px;
+      
+  }
+  .message{
+    padding: 10px;
+   
+    margin: 10px 0;
+max-height: 100%;
+
+padding-top: 100px;
+
+  }
+}
+
